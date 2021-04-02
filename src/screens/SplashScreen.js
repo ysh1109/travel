@@ -1,7 +1,7 @@
 
 
 import * as React from 'react';
-import { View, Text,StyleSheet,Dimensions,Image,TouchableOpacity } from 'react-native';
+import { View, Text,StyleSheet,Dimensions,Image,TouchableOpacity,StatusBar } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import * as Animatable from 'react-native-animatable';
 const SCREEN_HEIGHT = Dimensions.get('window').height;
@@ -12,6 +12,7 @@ const SplashScreen = ({navigation}) => {
     return (
         <View style={{ flex: 1,
           backgroundColor:'#2196f3'}}>
+            <StatusBar backgroundColor={'#2196f3'}/>
           <View style={styles.upperSection}>
             <Animatable.Image 
               animation="bounceIn"

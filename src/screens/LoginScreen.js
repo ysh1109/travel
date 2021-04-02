@@ -39,13 +39,14 @@ const LoginScreen = ({navigation}) => {
           }
           
         }
-        else {
-          ToastAndroid.show("Please Register first", ToastAndroid.LONG);
-        }
+       
       } catch (error) {
         // Error retrieving data
       }
       
+    }
+    else {
+      ToastAndroid.show("Please Enter valid Credentials or SignUp", ToastAndroid.LONG);
     }
   };
 
