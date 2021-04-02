@@ -22,7 +22,6 @@ const LoginScreen = ({navigation}) => {
   const [confirm, setConfirm] = useState(null);
 
   const loginHandler = async() => {
-    navigation.navigate('Home')
     if(email!=""&&password!=""){
       try {
         const username = await AsyncStorage.getItem('email');
