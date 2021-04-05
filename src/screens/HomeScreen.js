@@ -16,7 +16,7 @@ const RESTAURANTS = [
   {
     id: 'r1',
     name: 'Restaurant one',
-    location:"location one, India",
+    location:"location one, Sydney",
     photo:require('../assets/images/restuarants/r1.jpg'),
     type:'restaurant',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -24,7 +24,7 @@ const RESTAURANTS = [
   {
     id: 'r2',
     name: 'Restaurant two',
-    location:"location two, India",
+    location:"location two, Sydney",
     type:'restaurant',
     photo:require('../assets/images/restuarants/r2.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -32,7 +32,7 @@ const RESTAURANTS = [
   {
     id: 'r3',
     name: 'Restaurant three',
-    location:"location three, India",
+    location:"location three, Sydney",
     photo:require('../assets/images/restuarants/r3.jpg'),
     type:'restaurant',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -40,7 +40,7 @@ const RESTAURANTS = [
   {
     id: 'r4',
     name: 'Restaurant four',
-    location:"location four, India",
+    location:"location four, Sydney",
     type:'restaurant',
     photo:require('../assets/images/restuarants/r4.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -48,7 +48,7 @@ const RESTAURANTS = [
   {
     id: 'r5',
     name: 'Restaurant five',
-    location:"location five, India",
+    location:"location five, Sydney",
     photo:require('../assets/images/restuarants/r5.jpg'),
     type:'restaurant',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -59,7 +59,7 @@ const OUTING = [
   {
     id: 'o1',
     name: 'Outing one',
-    location:"location one, India",
+    location:"location one, Sydney",
     photo:require('../assets/images/outings/o1.jpg'),
     type:'restaurant',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -67,7 +67,7 @@ const OUTING = [
   {
     id: 'o2',
     name: 'Outing two',
-    location:"location two, India",
+    location:"location two, Sydney",
     type:'outing',
     photo:require('../assets/images/outings/o2.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -75,7 +75,7 @@ const OUTING = [
   {
     id: 'o3',
     name: 'Outing three',
-    location:"location three, India",
+    location:"location three, Sydney",
     photo:require('../assets/images/outings/o3.jpg'),
     type:'outing',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -83,7 +83,7 @@ const OUTING = [
   {
     id: 'o4',
     name: 'Outing four',
-    location:"location four, India",
+    location:"location four, Sydney",
     type:'outing',
     photo:require('../assets/images/outings/o4.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -91,7 +91,7 @@ const OUTING = [
   {
     id: 'o5',
     name: 'Outing five',
-    location:"location five, India",
+    location:"location five, Sydney",
     photo:require('../assets/images/outings/o5.jpg'),
     type:'outing',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -103,7 +103,7 @@ const STAY = [
   {
     id: 's1',
     name: 'Stay one',
-    location:"location one, India",
+    location:"location one, Sydney",
     photo:require('../assets/images/stay/s1.jpg'),
     type:'stay',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -111,7 +111,7 @@ const STAY = [
   {
     id: 's2',
     name: 'Stay two',
-    location:"location two, India",
+    location:"location two, Sydney",
     type:'stay',
     photo:require('../assets/images/stay/s2.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -119,7 +119,7 @@ const STAY = [
   {
     id: 's3',
     name: 'Stay three',
-    location:"location three, India",
+    location:"location three, Sydney",
     photo:require('../assets/images/stay/s3.jpg'),
     type:'stay',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -127,7 +127,7 @@ const STAY = [
   {
     id: 's4',
     name: 'Stay four',
-    location:"location four, India",
+    location:"location four, Sydney",
     type:'stay',
     photo:require('../assets/images/stay/s4.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -135,7 +135,7 @@ const STAY = [
   {
     id: 's5',
     name: 'Stay five',
-    location:"location five, India",
+    location:"location five, Sydney",
     photo:require('../assets/images/stay/s5.jpg'),
     type:'stay',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -147,7 +147,7 @@ const OTHERS = [
   {
     id: 'e1',
     name: 'Others one',
-    location:"location one, India",
+    location:"location one, Sydney",
     photo:require('../assets/images/other/e1.jpg'),
     type:'other',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -155,7 +155,7 @@ const OTHERS = [
   {
     id: 'e2',
     name: 'other two',
-    location:"location two, India",
+    location:"location two, Sydney",
     type:'other',
     photo:require('../assets/images/other/e2.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -163,7 +163,7 @@ const OTHERS = [
   {
     id: 'e3',
     name: 'Other three',
-    location:"location three, India",
+    location:"location three, Sydney",
     photo:require('../assets/images/other/e3.jpg'),
     type:'other',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -171,7 +171,7 @@ const OTHERS = [
   {
     id: 'e4',
     name: 'Other four',
-    location:"location four, India",
+    location:"location four, Sydney",
     type:'other',
     photo:require('../assets/images/other/e4.jpg'),
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"
@@ -179,7 +179,7 @@ const OTHERS = [
   {
     id: 'e5',
     name: 'Other five',
-    location:"location five, India",
+    location:"location five, Sydney",
     photo:require('../assets/images/other/e5.jpg'),
     type:'other',
     desc:"What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?"

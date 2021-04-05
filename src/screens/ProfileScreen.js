@@ -12,12 +12,15 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 
 const ProfileScreen = ({navigation}) => {
     const [username,setUsername] = React.useState('')
+    const [fullname,setFullname] = React.useState('')
 
     
     React.useEffect(async()=>{
       const value =  await AsyncStorage.getItem('username')
       setUsername(value)
-    })
+      const value2 =  await AsyncStorage.getItem('fullname')
+      setFullname(value2)
+    },[])
     return (
         <View style={{ flex: 1,
           backgroundColor:'#2196f3'}}>
@@ -26,7 +29,7 @@ const ProfileScreen = ({navigation}) => {
           style={{
             width: '90%',
             alignSelf: 'center',
-            flexDirection: 'row',
+            flexDirection: 'column-reverse',
             justifyContent: 'space-around',
           }}>
           <Animatable.Text
@@ -42,14 +45,15 @@ const ProfileScreen = ({navigation}) => {
               alignSelf: 'center',
             }}>
             Welcome! {"\n"}
-            {username}
+            {fullname} {"\n"}
+            Username : {username}
           </Animatable.Text>
         
           <Animatable.Image
             useNativeDriver={true}
             duration={1000}
             animation="fadeInRight"
-            style={{height:150,width:150}}
+            style={{height:150,width:150,alignSelf:'center'}}
             source={require('../assets/images/Agent2.png')}
           />
         </View>

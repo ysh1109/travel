@@ -3,6 +3,8 @@
 import * as React from 'react';
 import { View, Text,StyleSheet,Dimensions,Image,TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import MaterialIcon from 'react-native-vector-icons/FontAwesome';
+
 import * as Animatable from 'react-native-animatable';
 import { NavigationHelpersContext } from '@react-navigation/core';
 const SCREEN_HEIGHT = Dimensions.get('window').height;
@@ -13,7 +15,16 @@ const DescScreen = ({navigation,route}) => {
     return (
         <View style={{ flex: 1,backgroundColor:'white'
          }}>
+             <TouchableOpacity onPress={()=> {navigation.goBack()}} style={{position:'absolute',zIndex:20,height:45,width:45,backgroundColor:"#000000",borderRadius:50,alignItems:'center',justifyContent:'center',margin:5}}>
+                  <MaterialIcon
+                    style={{}}
+                    name="angle-left"
+                    color="white"
+                    size={30}
+                  />
+                  </TouchableOpacity>
           <View style={styles.upperSection}>
+           
             <Animatable.Image 
               animation="fadeIn"
                style={{alignSelf:'center',height:'100%',width:'100%'}}

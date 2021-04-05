@@ -21,8 +21,10 @@ const SignUpScreen = ({navigation}) => {
   const [confirmPwdError,setConfirmPwdError]  = React.useState(false)
   const [username,setUsername] = React.useState('')
   const [userError,setUserError] = React.useState(false)
+  const [fullname,setFullname] = React.useState('')
+  const [fullnameError,setFullnameError] = React.useState(false)
   const handleRegistration = async() => {
-    if(!(pwdError||confirmPwdError||emailError||userError)){     
+    if(!(pwdError||confirmPwdError||emailError||userError||fullnameError)){     
       //register(email,confirmPwd)
       try {
         await AsyncStorage.setItem(
@@ -36,6 +38,10 @@ const SignUpScreen = ({navigation}) => {
           await AsyncStorage.setItem(
             'username',
             username
+          );
+          await AsyncStorage.setItem(
+            'fullname',
+            fullname
           );
       } catch (error) {
         // Error saving data
@@ -89,6 +95,15 @@ const SignUpScreen = ({navigation}) => {
           setUserError(true)
       }
   }
+  const setFullNameHandler = (text) => {
+    if (text!=null) {
+        setFullname(text)
+        setFullnameError(false)
+    }
+    else{
+        setFullnameError(true)
+    }
+}
   const setConfirmPwdHandler = ( text ) => {
     if(pwd != text) {
       setConfirmPwd(text)
@@ -131,6 +146,21 @@ const SignUpScreen = ({navigation}) => {
                     onChangeText={text => setUserHandler(text)}
                     value={username}
                     placeholder="enter username"
+                  />
+                </View>
+              
+              </View>
+              <View style={[{flexDirection:'row'},styles.textbox]}>
+                 {/* <Text style={{fontWeight:'700',fontSize:22}}>Email</Text> */}
+                 <View style={{flex:0.1,justifyContent:'center'}}>
+                   <MaterialIcon style={{alignSelf:'center'}} name="account" size={20}/>
+                 </View>
+                <View  style={{flex:1}}>
+                  <TextInput
+                    style={styles.email}
+                    onChangeText={text => setFullNameHandler(text)}
+                    value={fullname}
+                    placeholder="enter full name"
                   />
                 </View>
               
@@ -197,18 +227,10 @@ const SignUpScreen = ({navigation}) => {
                 </View>
                 <Text style={{alignSelf:'center',top:-12,backgroundColor:'white',fontWeight:'700',fontSize:18}}>OR</Text>
 
-                <TouchableOpacity style={[styles.loginBtnFb,{flexDirection:'row'}]}>
-                <Icon style={{justifyContent:'center',alignSelf:'center',paddingRight:10}} name="mobile" size={20} color="white" />
-
-                  <Text style={styles.fbBtn}>Sign Up with Mobile Number</Text>
-                </TouchableOpacity>
-                  <TouchableOpacity style={[styles.loginBtnGoogle,{flexDirection:'row'}]}>
-                  <Icon style={{justifyContent:'center',alignSelf:'center',paddingRight:10}} name="google-plus" size={20} color="white" />
-                  <Text style={styles.googleBtn}>Sign Up with Google</Text>
-                </TouchableOpacity>
+               
 
                 <TouchableOpacity onPress={()=>{navigation.navigate('Login')}} style={styles.signUpBtn}>
-                  <Text style={{color:'black',alignSelf:'center',fontSize:18,fontWeight:'700',marginTop:15}}>Have a account? Login</Text>
+                  <Text style={{color:'black',alignSelf:'center',fontSize:18,fontWeight:'700',marginTop:5}}>Have a account? Login</Text>
                 </TouchableOpacity>
 
             </ScrollView>

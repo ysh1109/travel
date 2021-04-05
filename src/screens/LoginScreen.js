@@ -146,53 +146,7 @@ const LoginScreen = ({navigation}) => {
               Forgot Password ?
             </Text>
           </TouchableOpacity>
-          <View
-            style={{
-              height: 1,
-              backgroundColor: 'black',
-              marginTop: 20,
-            }}></View>
-          <Text
-            style={{
-              alignSelf: 'center',
-              top: -12,
-              backgroundColor: 'white',
-              fontWeight: '700',
-              fontSize: 18,
-            }}>
-            OR
-          </Text>
-
-          <TouchableOpacity
-            onPress={() => {}}
-            style={[styles.loginBtnFb, {flexDirection: 'row'}]}>
-            <Icon
-              style={{
-                justifyContent: 'center',
-                alignSelf: 'center',
-                paddingRight: 10,
-              }}
-              name="mobile"
-              size={20}
-              color="white"
-            />
-            <Text style={styles.fbBtn}>Login with Mobile Number</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={[styles.loginBtnGoogle, {flexDirection: 'row'}]}>
-            <Icon
-              style={{
-                justifyContent: 'center',
-                alignSelf: 'center',
-                paddingRight: 10,
-              }}
-              name="google-plus"
-              size={20}
-              color="white"
-            />
-            <Text style={styles.googleBtn}>Login with Google</Text>
-          </TouchableOpacity>
-
+ 
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('SignUp');
@@ -201,9 +155,10 @@ const LoginScreen = ({navigation}) => {
             <Text
               style={{
                 color: 'black',
-                alignSelf: 'center',
+                alignSelf: 'flex-end',
                 fontSize: 18,
                 fontWeight: '700',
+                paddingRight: 20,
                 marginTop: 15,
               }}>
               New User? Create Account
